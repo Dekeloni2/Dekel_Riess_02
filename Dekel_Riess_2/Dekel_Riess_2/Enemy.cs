@@ -19,11 +19,9 @@ public abstract class Enemy
         this.damage = damage;
         this.hitChance = hitChance;
     }
-    
-    // Abstract method that each specific enemy type must implement.
-    // This allows different enemies to have different attacks.
-    public abstract void Attack(Player player);
 
+    public abstract void Attack(Player player);
+    
     
     // Determines whether the attack hits based on the enemy's hitChance.
     // Returns true if the attack succeeds.

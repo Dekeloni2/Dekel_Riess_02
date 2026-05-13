@@ -5,14 +5,17 @@ namespace Dekel_Riess_2;
 
 // Represents an enemy that attacks the player using a bomb.
 // Inherits shared behavior from the abstract Enemy class.
-public class BombEnemy() : Enemy(50, 100)
+public class BombEnemy : Enemy, IEnemy
 {
-    
     /* Constructor sets the bomb enemy's damage (50)
     and hit chance (100%) using the base class constructor.
 
     Performs the bomb attack on the player.
     Overrides the abstract Attack method from Enemy. */
+    public BombEnemy() : base(50, 100)
+    {
+        
+    }
     public override void Attack(Player player)
     {
         Console.ForegroundColor = ConsoleColor.Green;

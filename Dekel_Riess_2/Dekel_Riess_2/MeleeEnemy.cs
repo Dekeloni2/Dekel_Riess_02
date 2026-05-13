@@ -3,7 +3,7 @@ using Dekel_Riess_2;
 
 // Represents an enemy that attacks the player using his bare hands.
 // Inherits shared behavior from the abstract Enemy class.
-public class MeleeEnemy : Enemy
+public class MeleeEnemy : Enemy, IEnemy
 {
     /* Constructor sets the bomb enemy's damage (20)
     and hit chance (20%) using the base class constructor.

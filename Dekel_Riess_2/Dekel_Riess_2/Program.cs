@@ -10,9 +10,9 @@ class Program
         
         Player player = new Player(100);
 
-        MeleeEnemy melee = new MeleeEnemy();
-        RangedEnemy range = new RangedEnemy();
-        BombEnemy bomb = new BombEnemy();
+        IEnemy melee = new MeleeEnemy();
+        IEnemy range = new RangedEnemy();
+        IEnemy bomb = new BombEnemy();
 
         melee.Attack(player);
         range.Attack(player);

@@ -4,7 +4,7 @@ namespace Dekel_Riess_2;
 
 // Represents an enemy that attacks the player using his bare hands.
 // Inherits shared behavior from the abstract Enemy class.
-public class RangedEnemy : Enemy
+public class RangedEnemy : Enemy, IEnemy
 {
     /* Constructor sets the ranged enemy's damage (5)
     and hit chance (50%) using the base class constructor.
